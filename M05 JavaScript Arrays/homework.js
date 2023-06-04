@@ -61,7 +61,8 @@ function dePalabrasAFrase(palabras) {
    // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'.
    // Tu código:
 
-   _allStringsArray = '';
+   let _allStringsArray = '';
+
    for (let i = 0; i < palabras.length; i++){
       if (i === palabras.length - 1) _allStringsArray = _allStringsArray + palabras[i];
       else _allStringsArray = _allStringsArray + palabras[i] + ' ';
@@ -74,8 +75,9 @@ function arrayContiene(array, elemento) {
    // Retornar true si está, o false si no está.
    // Tu código:
 
-   _indexArray = 0;
-   _legthArray = array.length;
+   let _indexArray = 0;
+   let _legthArray = array.length;
+
    do {
       if (array[_indexArray] === elemento) return true;
       _indexArray = _indexArray + 1;
@@ -88,7 +90,8 @@ function agregarNumeros(arrayOfNums) {
    // Suma todos los elementos y retorna el resultado.
    // Tu código:
 
-   _sumElements = 0;
+   let _sumElements = 0;
+
    for (let i = 0; i < arrayOfNums.length; i++) {
       _sumElements = _sumElements + arrayOfNums[i];
    }
@@ -100,8 +103,9 @@ function promedioResultadosTest(resultadosTest) {
    // Itera (en un bucle) los elementos del arreglo y devuelve el promedio de las notas.
    // Tu código:
 
-   _averageElements = 0;
-   _sumElements = 0;
+   let _averageElements = 0;
+   let _sumElements = 0;
+
    for (let i = 0; i < resultadosTest.length; i++) {
       _sumElements = _sumElements + resultadosTest[i];
    }
@@ -114,8 +118,9 @@ function numeroMasGrande(arrayOfNums) {
    // Retornar el número más grande.
    // Tu código:
 
-   _biggerNumber = arrayOfNums[0];
-   _lengthArray = arrayOfNums.length;
+   let _biggerNumber = arrayOfNums[0];
+   let _lengthArray = arrayOfNums.length;
+
    for (let i = 1; i < _lengthArray; i++) {
       if (arrayOfNums[i] > _biggerNumber) _biggerNumber = arrayOfNums[i]; 
    }
@@ -128,8 +133,9 @@ function multiplicarArgumentos() {
    // [PISTA]: "arguments" es un arreglo.
    // Tu código: 
 
-   _productArray = 1;
-   _lengthArray = arguments.length;
+   let _productArray = 1;
+   let _lengthArray = arguments.length;
+
    if (_lengthArray === 0) return 0;
    if (_lengthArray === 1) return arguments[0];
    for (let i = 0; i < _lengthArray; i++) {
@@ -142,8 +148,9 @@ function cuentoElementos(array) {
    // Desarrolla una función que retorne la cantidad de elementos del arreglo cuyo valor sea mayor que 18.
    // Tu código:
 
-   _lengthArray = array.length;
-   _elementsGreather18 = 0;
+   let _lengthArray = array.length;
+   let _elementsGreather18 = 0;
+
    for (let i = 0; i < _lengthArray; i++) {
       if (array[i] > 18) _elementsGreather18 = _elementsGreather18 + 1;
    }
@@ -156,8 +163,9 @@ function diaDeLaSemana(numeroDeDia) {
    // si el día corresponde a "Sábado" o "Domingo", y "Es dia laboral" en caso contrario.
    // Tu código:
 
-   _weekendDays = [1, 7];
-   _workingDays = [2, 3, 4, 5, 6]
+   let _weekendDays = [1, 7];
+   let _workingDays = [2, 3, 4, 5, 6]
+
    if (_weekendDays.includes(numeroDeDia)) return "Es fin de semana";
    if (_workingDays.includes(numeroDeDia)) return "Es dia laboral";
 }
@@ -167,7 +175,8 @@ function empiezaConNueve(num) {
    // Debe retornar true si el entero inicia con 9 y false en otro caso.
    // Tu código:
 
-   _strNumber = num.toString();
+   let _strNumber = num.toString();
+
    if (num < 0 || !_strNumber.startsWith("9", 0)) return false;
    return true;
 }
@@ -186,9 +195,10 @@ function mesesDelAño(array) {
    // Si alguno de los meses no está, retornar el string: "No se encontraron los meses pedidos".
    // Tu código:
 
-   _monthsDesired = ['Enero','Marzo','Noviembre']
-   _lengthArray = array.length;
-   _returnedArray = [];
+   let _monthsDesired = ['Enero','Marzo','Noviembre']
+   let _lengthArray = array.length;
+   let _returnedArray = [];
+
    if (!array.includes('Enero') || !array.includes('Marzo') || !array.includes('Noviembre')) return "No se encontraron los meses pedidos";
    for (let i = 0; i < _lengthArray; i++)
       if (_monthsDesired.includes(array[i])) _returnedArray.push(array[i]);
@@ -200,7 +210,8 @@ function tablaDelSeis() {
    // La función devuelve un arreglo con los resultados de la tabla de multiplicar del 6 en orden creciente.
    // Tu código:
    
-   _sixProductTable = [];
+   let _sixProductTable = [];
+ 
    for (i = 0; i <= 10; i++) {
       _sixProductTable[i] = 6 * i;
    }
@@ -212,8 +223,9 @@ function mayorACien(array) {
    // Recorrerlo y retornar un arreglo con todos los valores mayores a 100 (no incluye el 100).
    // Tu código:
 
-   _valuesGreater100 = [];
-   _lengthArray = array.length;
+   let _valuesGreater100 = [];
+   let _lengthArray = array.length;
+
    for (i = 0; i < _lengthArray; i++) {
       if (array[i] > 100) _valuesGreater100.push(array[i]);
    }
@@ -232,9 +244,10 @@ function breakStatement(num) {
    // [PISTA]: utiliza el statement 'break'.
    // Tu código:
 
-   _additionByTwoTenTimes = [];
-   _resultAddition = num;
-   _breakFlag = false;
+   let _additionByTwoTenTimes = [];
+   let _resultAddition = num;
+   let _breakFlag = false;
+
    for (_indexIteration = 0; _indexIteration < 10; _indexIteration++) {
       _resultAddition = _resultAddition + 2;
       _additionByTwoTenTimes[_indexIteration] = _resultAddition;
@@ -256,9 +269,10 @@ function continueStatement(num) {
    // [PISTA]: utiliza el statement 'continue'.
    // Tu código:
 
-   _additionByTwoTenTimes = [];
-   _resultAddition = num;
-   _indexArray = 0;
+   let _additionByTwoTenTimes = [];
+   let _resultAddition = num;
+   let _indexArray = 0;
+
    for (let _indexIteration = 0; _indexIteration < 10; _indexIteration++) {
       if (_indexIteration === 5) continue;
       else {
