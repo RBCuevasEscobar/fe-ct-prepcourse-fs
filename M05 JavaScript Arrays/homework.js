@@ -284,7 +284,6 @@ function continueStatement(num) {
    return _additionByTwoTenTimes;
 }
 
-console.log(continueStatement(-4))
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
