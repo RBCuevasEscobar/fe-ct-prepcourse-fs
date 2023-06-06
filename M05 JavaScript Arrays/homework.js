@@ -212,7 +212,7 @@ function tablaDelSeis() {
    
    let _sixProductTable = [];
  
-   for (i = 0; i <= 10; i++) {
+   for (let i = 0; i <= 10; i++) {
       _sixProductTable[i] = 6 * i;
    }
    return _sixProductTable;
@@ -224,9 +224,9 @@ function mayorACien(array) {
    // Tu código:
 
    let _valuesGreater100 = [];
-   let _lengthArray = array.length;
+   const _lengthArray = array.length;
 
-   for (i = 0; i < _lengthArray; i++) {
+   for (let i = 0; i < _lengthArray; i++) {
       if (array[i] > 100) _valuesGreater100.push(array[i]);
    }
    return _valuesGreater100;
@@ -248,7 +248,7 @@ function breakStatement(num) {
    let _resultAddition = num;
    let _breakFlag = false;
 
-   for (_indexIteration = 0; _indexIteration < 10; _indexIteration++) {
+   for (let _indexIteration = 0; _indexIteration < 10; _indexIteration++) {
       _resultAddition = _resultAddition + 2;
       _additionByTwoTenTimes[_indexIteration] = _resultAddition;
     if (_resultAddition === _indexIteration) {
