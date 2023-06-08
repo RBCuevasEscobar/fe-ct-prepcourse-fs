@@ -30,6 +30,15 @@ function nuevoUsuario(nombre, email, password) {
       password: password,
    }
    return _newUser;
+
+   // Otra opcion
+   // Aplica cuando los argumentos y las propiedades se llaman igual.
+   // let _newUser = {
+   //    nombre,
+   //     email,
+   //    password,
+   // }
+   //
 }
 
 function agregarPropiedad(objeto, propiedad) {
@@ -50,8 +59,20 @@ function invocarMetodo(objeto, metodo) {
    // [NOTA]: no necesitar retornar nada.
    // Tu código:
 
-   return objeto[metodo]();
+   return objeto[metodo](); 
 }
+
+/* _obj = {
+   _funcName: "_incrementaX",
+   _xVar: 0,
+   _incrementaX: function() {
+      this._xVar = this._xVar + 1;
+      return this._xVar;
+   }
+}
+
+console.log(invocarMetodo(_obj, "_incrementaX"))
+*/
 
 function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
    // El parámetro "objetoMisterioso" posee una propiedad con el nombre "numeroMisterioso".
