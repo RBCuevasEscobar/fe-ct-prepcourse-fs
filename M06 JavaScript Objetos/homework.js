@@ -31,7 +31,7 @@ function nuevoUsuario(nombre, email, password) {
    }
    return _newUser;
 
-   // Otra opcion
+   // Otra opcion para este ejercicio:
    // Aplica cuando los argumentos y las propiedades se llaman igual.
    // let _newUser = {
    //    nombre,
