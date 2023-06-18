@@ -162,7 +162,7 @@ function sumarLikesDeUsuario(objetoUsuario) {
 
    let _arrayLength = objetoUsuario.posts.length;
    let _totalLikes = 0;
-   for (i = 0; i < _arrayLength; i++) {
+   for (let i = 0; i < _arrayLength; i++) {
       _totalLikes = _totalLikes + objetoUsuario.posts[i].likes;
    }
    return _totalLikes;

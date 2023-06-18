@@ -6,7 +6,7 @@ function mayuscula(nombre) {
    // [Ejemplo]: "mario" ----> "Mario".
    // Tu código:
 
-   _nametoArray = nombre.split(''); 
+   let _nametoArray = nombre.split(''); 
    _nametoArray[0] = _nametoArray[0].toUpperCase();
    return _nametoArray.join('')   
 
