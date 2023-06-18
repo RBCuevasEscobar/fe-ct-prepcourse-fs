@@ -130,8 +130,6 @@ function buscoInterseccion(array1, array2) {
    return _intersectArray.sort();
 }
 
-console.log(buscoInterseccion([4,2,3],[1,3,4]));
-
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
    deObjetoAarray,
